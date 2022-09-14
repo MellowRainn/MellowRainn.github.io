@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="background-color: dimgray;" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -11,29 +11,35 @@
 </head>
 
 <body>
-  <h1 class="title">My humble profile</h1>
-  <p class="titlesubtext">My hubmle origins :p</p>
-  <section style="font-family:arial ,helvetica, sans-serif;">
-    <ul>
-      <li><a href="index.html">Homepage</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="">nothing yet</a></li>
-      <li><a href="">nothing yet</a></li>
-    </ul>
-  </section>
-  <section style="color:red ;">
-    <h1>Me is cool</h1>
-    <h2>Personal info</h2>
-    <section>
-      <ul>
-        <li>18 Years old.</li>
-        <li>Matthias de Ruijter.</li>
-        <il>Live on farm.</il>
+  <header>
+    <h1 class="title">Who am I?</h1>
+    <section style="font-family:arial ,helvetica, sans-serif;">
+      <ul target="_blank" rel="noopener noreferrer">
+        <!-- idk could do here target="_blank" rel="noopener noreferrer" but then my active element will also open a new page-->
+        <li><a href="index.html">Homepage</a></li>
+        <li class="active"><a href="profile.html">Profile</a></li>
+          <li><a href="blog.html">Blogg</a></li>
+          <li><a href="faq.html">FAQ(Frequent Asked Questions)</a></li>
+          <li><a href="dashboard.html">My own dashboard</a></li>
       </ul>
     </section>
-    <p>pushin p</p>
-    <h2>Extraciricular activities</h2>
-  </section>
+  </header>
+
+  <main>
+    <section style="color:red ;">
+      <h1 style="padding-top: 40px; padding-left: 120px;font-size: 300%;">Personal info</h1>
+      <section style="font-size: 150%;">
+        <ul>
+          <li>18 Years old.</li>s
+          <li>Matthias de Ruijter.</li>
+          <li>Live on farm.</li>
+          <li>Like gaming.</li>
+          <li>Like listening to music</li>
+        </ul>
+      </section>
+    </section>
+  </main>
+  
 </body>
 
 </html>

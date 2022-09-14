@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html style="background-color: dimgray;" lang="en">
+<main>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Who am I</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Dashboard</h1>
+      <section style="font-family:arial ,helvetica, sans-serif;">
+        <ul target="_blank" rel="noopener noreferrer" class="headd">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="blog.html">Blogg</a></li>
+          <li><a href="faq.html">FAQ(Frequent Asked Questions)</a></li>
+          <li class="active"><a href="dashboard.html">My own dashboard</a></li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <table id="tdata">
+        <!-- add parameters-->
+        <tr class="quartile0">
+          <th style="text-align: center;">Quartile</th>
+          <th>Course</th>
+          <th style="text-align: center;">EC</th>
+          <th>Exam</th>
+          <th style="text-align: center;">Grade</th>
+        </tr>
+        <tr>
+          <th colspan="5" style="text-align: center;" class="quartile0">Year 1</th>
+        </tr>
+        <tr class="quartile1">
+          <td class="quartile" rowspan="4">1.</td>
+          <td>Program & Career Orientation</td>
+          <td class="ec">2.5</td>
+          <td>Assessment Website</td>
+          <td class="grades">5.4</td>
+        </tr>
+        <tr>
+          <!--Quarter 1-->
+          <td>Computer Science Basics</td>
+          <td class="ec">5.0</td>
+          <td>Written Knowledge Check</td>
+          <td class="grades">5.5</td>
+        </tr>
+        <tr>
+          <!--Quarter 1-->
+          <td rowspan="2">Programming Basics</td>
+          <td rowspan="2" class="ec">5.0</td>
+          <td>Case Study</td>
+          <td class="grades">10</td>
+        </tr>
+        <tr>
+          <!--Quarter 1-->
+          <td>Knowledge Test</td>
+          <td class="grades">6</td>
+        </tr>
+        <tr class="quartile2">
+          <td class="quartile" rowspan="2">2.</td>
+          <td rowspan="2">Object-Orientated Programming</td>
+          <td rowspan="2" class="ec">10</td>
+          <td>Case Study</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 2-->
+          <td>presentation</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <td rowspan="4" class="quartile">3</td>
+          <td>Framework Development</td>
+          <td class="ec">5.0</td>
+          <td>Case study</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 3-->
+          <td rowspan="3">Framework Project 1</td>
+          <td rowspan="3" class="ec">7.5</td>
+          <td>Criterium Based Interview</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 3-->
+          <td>Assignment</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 3-->
+          <td>Case Study</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <td rowspan="8" class="quartile">4</td>
+          <td rowspan="3">Framework Project 2</td>
+          <td rowspan="3" class="ec">10</td>
+          <td>Final Delivery</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td>Report Of Acceptance Tests And Optional Assessments</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td>IT Development Portfolio</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td rowspan="2">Personal Professional Development: Exploration (PPD-E)(INT Class)</td>
+          <td rowspan="2" class="ec">12.5</td>
+          <td>English Test</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td>Criterium Focused Interview</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td rowspan="3">Personal Professional Development: Exploration (PPD-E)(NL Class)</td>
+          <td rowspan="3" class="ec">12.5</td>
+          <td>Test (Dutch)</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td>Test (English)</td>
+          <td class="grades">-</td>
+        </tr>
+        <tr>
+          <!--Quarter 4-->
+          <td>Criterium Focused Interview</td>
+          <td class="grades">-</td>
+        </tr>
+
+        <script>
+          var els = document.getElementsByClassName("grades")
+          for (var i = 0; i < els.length; i++) {
+            var cell = els[i];
+            if (cell.textContent < 5.5) {
+              cell.classList.remove('green')
+            } else {
+              cell.classList.add('green');
+            }
+          }
+        </script>
+      </table>
+      <div class="container">
+        <div class="progress studypoints">100%</div>
+      </div>
+      <div>
+        <div class="dumb">nbsa</div>
+      </div>
+    </main>
+
+  </body>
+</main>
+
+</html>

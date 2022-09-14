@@ -1,33 +1,149 @@
-.title, .titlesubtext {
-    text-align: center;font-size: 700%;margin-bottom: 0%;
+.title {
+  text-align: center;
+  font-size: 700%;
+  margin-bottom: 0%;
+  display: flexbox;
+  background-color: darkgrey;
 }
+
 .titlesubtext {
-    text-align: center;font-size: 250%;
+  text-align: center;
+  font-size: 250%;
+  margin-top: 0%;
+  display: flexbox;
 }
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  height: 10%;
+}
+
+li {
+  float: left;
+  margin-left: 10%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 0%;
+}
+
+li a:hover {
+  background-color: #111;
+  width: 1600;
+}
+
+.active {
+  background-color: rgb(22, 0, 185);
+}
+
+.faq {
+  display: block;
+  font-size: 200%;
+}
+
+
+.html {
+  background-color: dimgrey;
+}
+
+body {
+  background-color: grey;
+}
+
+summary {
+  background-color: #333;
+  font-size: 100%;
+  border-radius: 40px;
+  margin-bottom: 0%;
   
-  li {
-    float: left;margin-left: 10%;
-  }
-  
-  li a {
-    display: block;
+}
+
+details {
+  margin-top: 0%;
+  margin-bottom: 0px;
+  display: block;
+  background-color: #404040;
+  border: 4mm ridge rgba(23, 4, 66, 0.105);
+  position: relative;
+}
+
+.answer {
+  padding: 0%;
+  margin: 0%;
+  border-top: 2mm ridge rgba(23, 4, 66, 0.105);
+}
+#tdata {
+  height: auto;
+  width: 100%;
+  border: 4mm ridge rgba(65, 4, 207, 0.105);
+}
+
+
+
+.quartile0 {
+  background-color: rgb(22, 0, 185);
+}
+
+.grades {
+  background-color: #FF0000;
+  text-align: center;
+}
+
+.grades.green {
+  background-color: #33FF3C;
+}
+
+.grades.grey {
+  background-color: gray;
+}
+
+.ec {
+  text-align: center;
+}
+td {
+  border: 1px solid #111;
+  padding: 0%;
+  margin: 0%;
+}
+
+.quartile {
+  text-align: center;
+}
+
+.head {
+  position: fixed;
+}
+
+* {box-sizing:border-box}
+
+.container {
+  width: 100%;
+  background-color: #481e1e;
+  text-align: end;
+}
+
+.progress {
+    text-align: right; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-    width: 400;
-  }
-  .active{
-    background-color: blue;
-  }
+}
+
+
+.studypoints {width: 10%; background-color: #04AA6D;}
+
+.dumb {
+  width: 60%;
+  background-color: red;
+}
