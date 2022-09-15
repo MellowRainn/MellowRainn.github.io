@@ -284,3 +284,12 @@ div a:hover {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+.article1 {
+  padding-left: 21%;
+  font-size: 150%;
+  padding-top: 0%;
+  padding-bottom: 1%;
+  margin-top: 0%;
+  margin-bottom: 1%;
+}
