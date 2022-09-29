@@ -1,9 +1,10 @@
 navbar {
-    position: absolute;
-    top: 0;
+    position: relative;
+    z-index: 99999;
 }
 
-.sidenav, .dropdown-btn {
+.sidenav,
+.dropdown-btn {
     height: 100%;
     width: 0;
     position: fixed;
@@ -65,7 +66,39 @@ navbar {
     background-color: #262626;
     padding-left: 8px;
 }
+
 .fa-caret-down {
     float: right;
     padding-right: 8px;
-  }
+}
+
+.container-nav,
+.nav-container-maks {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 20;
+}
+
+.container-nav {
+    position: relative;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 100vh;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
