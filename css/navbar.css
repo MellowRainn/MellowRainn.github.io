@@ -1,7 +1,10 @@
-navbar {
+.navbar {
     position: relative;
     z-index: 99999;
+    box-sizing:border-box
+    position; static;
 }
+
 
 .sidenav,
 .dropdown-btn {
@@ -72,15 +75,6 @@ navbar {
     padding-right: 8px;
 }
 
-.container-nav,
-.nav-container-maks {
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    z-index: 20;
-}
 
 .container-nav {
     position: relative;
