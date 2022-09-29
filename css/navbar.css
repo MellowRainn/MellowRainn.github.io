@@ -1,8 +1,11 @@
 .navbar {
     position: relative;
     z-index: 99999;
-    box-sizing:border-box
-    position; static;
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    line-height: 36px;
+    position: static;
 }
 
 
@@ -79,12 +82,9 @@
 .container-nav {
     position: relative;
     z-index: 10;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     max-height: 100vh;
-    max-width: 1280px;
+    max-width: 30%;
     margin-right: auto;
     margin-left: auto;
     -webkit-box-pack: justify;
@@ -95,4 +95,10 @@
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+}
+
+div {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
 }
