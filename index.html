@@ -1,69 +1,142 @@
 <!DOCTYPE html>
-<html style="background-color: dimgray;" lang="en">
-<main>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Who am I</title>
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Who am I</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="css/body.css">
+</head>
 
-    <body class="body">
-          <div class="navbar">
+<body class="body">
+    <header>
+        <div class="navbar">
             <script src="js/navbar.js"></script>
             <div class="container-nav nav-container-mask">
                 <div class="logo">
-                    <a href="index.html">My Portfolio</a>g
+                    <span onclick="openNav()" class="navbaropener"><i style="color: #333;"
+                            class="fa-solid fa-bars fa-3x"></i></span>
+                    <span> <a href="index.html"><i class="fa-solid fa-browser fa-3x"
+                                style="color: #333;"></i></a></span>
                 </div>
-                <div id="mySidenav" class="sidenav">
+                <div id="mySidenav" class="sidenav" style="text-align: center;">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                    <button class="dropdown-btn">Dropdown 
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown-container">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                  </div>
-                  
-                  <span onclick="openNav()" class="navbaropener">open</span>
-                  
-                  <div id="main">
-                    ...
-                  </div> 
-            </div>
+                    <div id="navlinks">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                        <a onclick="opendropdownbtn()" class="dropdown-btn">Dropdown</a>
+                        <div class="dropdown-container dropdownbtn" id="dropdownbtn"
+                            style="display: none; transition: 0.2s;">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="discord.html" class="smallicons"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://www.linkedin.com/" class="smallicons"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="github.com" class="smallicons"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="smallicons"><i class="fa-duotone fa-envelope"></i></a>
+                        <a href="#" class="smallicons"><i class="fa-brands fa-stack-overflow"></i></a>
+                    </div>
 
-
+                </div>
             </div>
         </div>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="columns sidebody">
+                <div class="quiz">
+                    <h1>Quiz time.</h1>
+                    <script src="js/quiz.js"></script>
+                    <section>
+                        <div id="results"></div>
+                        <form name="quizForm" onsubmit="submitAnswers(); return false">
+                            <h3>1. What is my favorite job?</h3>
+                            <input type="radio" name="q1" value="a" id="q1a"> a. Software Engineer <br>
+                            <input type="radio" name="q1" value="b" id="q1b"> b. Cyber Security<br>
+                            <input type="radio" name="q1" value="c" id="q1c"> c. Data Analyst <br>
+                            <input type="radio" name="q1" value="d" id="q1d"> d. Buisiness Constant <br>
 
-        <main>
-            <div class="container">
-                <div class="item1">
-                    <img src="https://www.hz.nl/sites/default/files/styles/medium/public/2019-10/ICT-min.jpg?itok=O9XNtJ5f"
-                        alt="HZ">
-                </div>
-                <div class="item2">
-                    <h2 class="title">Welcome to my website</h2>
-                    <p></p>
+                            <h3>2. What do I like the most about coding?</h3>
+                            <input type="radio" name="q2" value="a" id="q2a"> a. The statisfaction of finishing a
+                            project <br>
+                            <input type="radio" name="q2" value="b" id="q2b"> b. The joy of solving a problem.<br>
+                            <input type="radio" name="q2" value="c" id="q2c"> c. The unending amount of knowledge and
+                            different solutions which can be right or more efficient<br>
+                            <input type="radio" name="q2" value="d" id="q2d"> d. All of the above<br>
+
+                            <br><br>
+                            <input type="submit" value="Submit Answers">
+                        </form>
+                    </section>
                 </div>
             </div>
-        </main>
-        <footer>
-            <p>Maarten Dregmans 2020 &copy;</p>
-        </footer>
-</main>
+            <div class="columns mainbody">
+                <h1 class="title">
+                    Hello and welcome to my website.
+                </h1>
+                <h2 class="subtitle">
+                    I am a student and a developer.
+                </h2>
+                <p class="text"> My name is Matthias de Ruijter and I am an 18 year old boy who likes gaming and is
+                    studying It at the university of
+                    applied science in Middelburg. I am
+                    currently in my first year of university and I am enjoying it so far. I like being alone, but
+                    working on projects in a group doesn't bother me too much as I am fine with spending time with new
+                    people and learning from them. I am a pretty intelligent student and I think I'm doing quite well in
+                    my study at the moment, although
+                    I still have some problems with procastinating stuff. I am looking forward to the next few years of
+                    university and I'm hopeful that I will be able to get a good job in the computer industry after I
+                    graduates.
+                </p>
+                <p class="text">
+                    I have always been interested in computers and how they work. When I was younger, I would
+                    sometimes take apart his family's computer to see what was inside. I always have been fascinated by
+                    the way
+                    the different components worked together to make the machine function. This curiosity led me
+                    to study it at university. I am hoping that by learning more about how computers
+                    work, I will run into less errors and being able to fix my own stuff. My favourite past time
+                    activities right now are: </p>
+                <ul class="text" style="padding-bottom: 1rem">
+                    <li>Playing video games</li>
+                    <li>Hanging out with friends</li>
+                    <li>Reading books about philosophy</li>
+                    <li>coding</li>
+                </ul>
+            </div>
 
+            <div class="columns sidebody">
+                <img src="/img/family.jpg" alt="afamilyphoto" class="img">
+                <img src="/img/hz-logo.jpg" alt="hzlogo" class="img">
+            </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container-footer">
+                <div class="footer-center">
+                    <h3>CONTACT</h3>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                        </span>
+                        <p><span>Address:</span> Middelburg, Netherlands</p>
+                    </div>
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <p><span>Call:</span> +31 6 12345678</p>
+                    </div>
+    </footer>
 
 </body>
-</main>
 
 </html>

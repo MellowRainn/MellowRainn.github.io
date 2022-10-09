@@ -164,9 +164,9 @@
         </tr>
 
         <script>
-          var els = document.getElementsByClassName("grades")
-          for (var i = 0; i < els.length; i++) {
-            var cell = els[i];
+          let els = document.getElementsByClassName("grades")
+          for (let i = 0; i < els.length; i++) {
+            let cell = els[i];
             if (cell.textContent < 5.5) {
               cell.classList.remove('green')
             } else {
