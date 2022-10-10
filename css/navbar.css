@@ -1,150 +1,153 @@
 .navbar {
-    position: relative;
-    z-index: 99999;
-    box-sizing: border-box;
-    display: block;
-    float: none;
-    line-height: 36px;
-    position: static;
-    background-color: #000333;
-    padding-bottom: 20px;
+  position: relative;
+  z-index: 99999;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 36px;
+  position: static;
+  background-color: #000333;
+  padding-bottom: 20px;
 
 }
 
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover,
 .dropdown-btn a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 #main {
-    transition: margin-left .5s;
-    padding: 20px;
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
+  .sidenav {
+    padding-top: 15px;
+  }
 
-    .sidenav a {
-        font-size: 18px;
-    }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 .navbaropener {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-left: 50px;
-    padding-top: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 50px;
+  padding-top: 25px;
 }
 
 .dropdown-container {
-    background-color: #000333;
-    height: 0%;
-    width: 100%;
-    padding-left: 8px;
+  background-color: #000333;
+  height: 0%;
+  width: 100%;
+  padding-left: 8px;
 }
 
 .container-nav {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    max-height: 100vh;
-    max-width: 30%;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding-top: 20px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  max-height: 100vh;
+  max-width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-top: 20px;
 }
 
 
 .dropdown-btn {
-    text-decoration: none;
-    background-color: 0f1112;
-    font-size: 25px;
-    display: flex;
-    transition: 0.3s;
-    margin-left: auto;
-    margin-right: auto;
+  text-decoration: none;
+  background-color: 0f1112;
+  font-size: 25px;
+  display: flex;
+  transition: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
 
 
 }
 
 .social {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 64px;
-    width: 400px;
-    border-radius: 100%;
-    background-color: #262626;
-    color: #fff;
-    font-size: 25px;
-    line-height: 50px;
-    transition: 0.3s;
-    margin-top: 500px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 64px;
+  width: 400px;
+  border-radius: 100%;
+  background-color: #262626;
+  color: #fff;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.3s;
+  margin-top: 500px;
 
 }
 
 .navfooter {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 50px;
-    width: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 400px;
 
 }
-.fa-bars, .fa-database{
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    transition: 0.3s;
+
+.fa-bars,
+.fa-database {
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.3s;
 }
+
 .smallicons {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }

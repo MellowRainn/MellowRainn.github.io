@@ -2,154 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Who am I</title>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
-    <link rel="stylesheet" href="css/body.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="My portofolio site.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Matthias de Ruijter">
+  <link rel="icon" href="imgAndPdf/hz-logo.jpg">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="stylesheet" href="css/body.css">
 </head>
 
 <body class="body">
-    <header>
-        <div class="navbar">
-            <script src="js/navbar.js"></script>
-            <div class="container-nav nav-container-mask">
-                <div class="logo">
-                    <span onclick="openNav()" class="navbaropener"><i style="color: #333;"
-                            class="fa-solid fa-bars fa-3x"></i></span>
-                    <span> <a href="index.html"><i class="fa-solid fa-browser fa-3x"
-                                style="color: #333;"></i></a></span>
-                </div>
-                <div id="mySidenav" class="sidenav" style="text-align: center;">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div id="navlinks">
-                        <a href="index.html" class="active">Homepage</a>
-                        <a href="profile.html">My Profile</a>
-                        <a href="dashboard.html">Dashboard</a>
-                        <a href="faq.html">Frequent asked Question(faq)</a>
-                        <a href="blog.html">Blog</a>
-                        <a onclick="opendropdownbtn()" class="dropdown-btn">Dropdown</a>
-                        <div class="dropdown-container dropdownbtn" id="dropdownbtn"
-                            style="display: none; transition: 0.2s;">
-                            <a target="_blank" rel="noopener noreferrer"
-                                href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">-
-                                The HZ
-                                HBO-ICT Course and Examination Regulations (CER)</a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://learn.hz.nl/my/%22%3E">HZ
-                                <a target="blank" rel="noopener noreferrer"
-                                    href="https://teams.microsoft.com/?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid">Teams(browser)</a>
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://github.com/HZ-HBO-ICT%22%3E">Github
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer"
-                                    href="https://hz.osiris-student.nl/#/voortgang/%22%3E">Study
-                                    progress</a>
-                                <a target="_blank" rel="noopener norferrer"
-                                    href="imgAndPdf/IR-.pdf"> The Implementation
-                                    Regulations (IR)</a>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <a href="discord.html" class="smallicons"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://www.linkedin.com/" class="smallicons"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="github.com" class="smallicons"><i class="fa-brands fa-github"></i></a>
-                        <a href="#" class="smallicons"><i class="fa-duotone fa-envelope"></i></a>
-                        <a href="#" class="smallicons"><i class="fa-brands fa-stack-overflow"></i></a>
-                    </div>
-
-                </div>
-            </div>
+  <header>
+    <div class="navbar">
+      <script src="js/navbar.js"></script>
+      <div class="container-nav nav-container-mask">
+        <div class="logo">
+          <span onclick="openNav()" class="navbaropener"><i style="color: #333;"
+              class="fa-solid fa-bars fa-3x"></i></span>
+          <span> <a href="index.html"><i class="fa-solid fa-browser fa-3x" style="color: #333;"></i></a></span>
         </div>
-    </header>
-    <main>
-        <div class="grid-container">
-            <div class="columns sidebody">
-                <div class="quiz">
-                    <h1>Quiz time.</h1>
-                    <script src="js/quiz.js"></script>
-                    <section>
-                        <div id="results"></div>
-                        <form name="quizForm" onsubmit="submitAnswers(); return false">
-                            <h3>1. What is my favorite job?</h3>
-                            <input type="radio" name="q1" value="a" id="q1a"> a. Software Engineer <br>
-                            <input type="radio" name="q1" value="b" id="q1b"> b. Cyber Security<br>
-                            <input type="radio" name="q1" value="c" id="q1c"> c. Data Analyst <br>
-                            <input type="radio" name="q1" value="d" id="q1d"> d. Buisiness Constant <br>
-
-                            <h3>2. What do I like the most about coding?</h3>
-                            <input type="radio" name="q2" value="a" id="q2a"> a. The statisfaction of finishing a
-                            project <br>
-                            <input type="radio" name="q2" value="b" id="q2b"> b. The joy of solving a problem.<br>
-                            <input type="radio" name="q2" value="c" id="q2c"> c. The unending amount of knowledge and
-                            different solutions which can be right or more efficient<br>
-                            <input type="radio" name="q2" value="d" id="q2d"> d. All of the above<br>
-
-                            <br><br>
-                            <input type="submit" value="Submit Answers">
-                        </form>
-                    </section>
-                </div>
+        <div id="mySidenav" class="sidenav" style="text-align: center;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div id="navlinks">
+            <a href="index.html" class="active">Homepage</a>
+            <a href="profile.html">My Profile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="faq.html">Frequent asked Question(faq)</a>
+            <a href="blog.html">Blog</a>
+            <a onclick="opendropdownbtn()" class="dropdown-btn">Aside menu</a>
+            <div class="dropdown-container dropdownbtn" id="dropdownbtn" style="display: none; transition: 0.2s;">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">-
+                The HZ
+                HBO-ICT Course and Examination Regulations (CER)</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://learn.hz.nl/my/%22%3E">HZ
+                <a target="blank" rel="noopener noreferrer"
+                  href="https://teams.microsoft.com/?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid">Teams(browser)</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/HZ-HBO-ICT%22%3E">Github
+                </a>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://hz.osiris-student.nl/#/voortgang/%22%3E">Study
+                  progress</a>
+                <a target="_blank" rel="noopener norferrer" href="imgAndPdf/IR-.pdf"> The Implementation
+                  Regulations (IR)</a>
             </div>
-            <div class="columns mainbody">
-                <h1 class="title">
-                    Hello and welcome to my website.
-                </h1>
-                <h2 class="subtitle">
-                    I am a student and a developer.
-                </h2>
-                <p class="text"> My name is Matthias de Ruijter and I am an 18 year old boy who likes gaming and is
-                    studying It at the university of
-                    applied science in Middelburg. I am
-                    currently in my first year of university and I am enjoying it so far. I like being alone, but
-                    working on projects in a group doesn't bother me too much as I am fine with spending time with new
-                    people and learning from them. I am a pretty intelligent student and I think I'm doing quite well in
-                    my study at the moment, although
-                    I still have some problems with procastinating stuff. I am looking forward to the next few years of
-                    university and I'm hopeful that I will be able to get a good job in the computer industry after I
-                    graduates.
-                </p>
-                <p class="text">
-                    I have always been interested in computers and how they work. When I was younger, I would
-                    sometimes take apart his family's computer to see what was inside. I always have been fascinated by
-                    the way
-                    the different components worked together to make the machine function. This curiosity led me
-                    to study it at university. I am hoping that by learning more about how computers
-                    work, I will run into less errors and being able to fix my own stuff. My favourite past time
-                    activities right now are: </p>
-                <ul class="text" style="padding-bottom: 1rem">
-                    <li>Playing video games</li>
-                    <li>Hanging out with friends</li>
-                    <li>Reading books about philosophy</li>
-                    <li>coding</li>
-                </ul>
-            </div>
+          </div>
+          <div class="social">
+            <a href="https://www.discord.com" class="smallicons"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/" class="smallicons"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com" class="smallicons"><i class="fa-brands fa-github"></i></a>
+            <a href="https://gmail.com/" class="smallicons"><i class="fa-duotone fa-envelope"></i></a>
+            <a href="https://stackoverflow.com/" class="smallicons"><i class="fa-brands fa-stack-overflow"></i></a>
+          </div>
 
-            <div class="columns sidebody">
-                <img src="/img/family.jpg" alt="afamilyphoto" class="img">
-                <img src="/img/hz-logo.jpg" alt="hzlogo" class="img">
-            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="grid-container">
+      <div class="columns sidebody">
+        <div class="quiz">
+          <h1>Quiz time.</h1>
+          <script src="js/quiz.js"></script>
+          <section>
+            <div id="results"></div>
+            <form name="quizForm" onsubmit="submitAnswers(); return false">
+              <h3>1. What is my favorite job?</h3>
+              <input type="radio" name="q1" value="a" id="q1a"> a. Software Engineer <br>
+              <input type="radio" name="q1" value="b" id="q1b"> b. Cyber Security<br>
+              <input type="radio" name="q1" value="c" id="q1c"> c. Web developer <br>
+              <input type="radio" name="q1" value="d" id="q1d"> d. Buisiness Constant <br>
 
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="container-footer">
-                <div class="footer-center">
-                    <h3>CONTACT</h3>
-                    <div>
-                        <span>
-                            <i class="fa-solid fa-map-marker-alt"></i>
-                        </span>
-                        <p><span>Address:</span> Middelburg, Netherlands</p>
-                    </div>
-                    <div>
-                        <span>
-                            <i class="fa-solid fa-phone"></i>
-                        </span>
-                        <p><span>Call:</span> +31 6 12345678</p>
-                    </div>
-    </footer>
+              <h3>2. What do I like the most about coding?</h3>
+              <input type="radio" name="q2" value="a" id="q2a"> a. The statisfaction of finishing a
+              project <br>
+              <input type="radio" name="q2" value="b" id="q2b"> b. The joy of solving a problem.<br>
+              <input type="radio" name="q2" value="c" id="q2c"> c. The unending amount of knowledge and
+              different solutions which can be right or more efficient<br>
+              <input type="radio" name="q2" value="d" id="q2d"> d. All of the above<br>
+
+              <br><br>
+              <input type="submit" value="Submit Answers">
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="columns mainbody">
+        <h1 class="title">
+          Hello and welcome to my website.
+        </h1>
+        <h2 class="subtitle">
+          I am a student and a developer.
+        </h2>
+        <p class="text"> My name is Matthias de Ruijter and I am an 18 year old boy who likes gaming and is
+          studying It at the university of
+          <a href="https://hz.nl" style="color:#000333">applied science in Middelburg</a>. I am
+          currently in my first year of university and I am enjoying it so far. I like being alone, but
+          working on projects in a group doesn't bother me too much as I am fine with spending time with new
+          people and learning from them. I am a pretty intelligent student and I think I'm doing quite well in
+          my study at the moment, although
+          I still have some problems with procastinating stuff. I am looking forward to the next few years of
+          university and I'm hopeful that I will be able to get a good job in the computer industry after I
+          graduates.
+        </p>
+        <p class="text">
+          I have always been interested in computers and how they work. When I was younger, I would
+          sometimes take apart his family's computer to see what was inside. I always have been fascinated by
+          the way
+          the different components worked together to make the machine function. This curiosity led me
+          to study it at university. I am hoping that by learning more about how computers
+          work, I will run into less errors and being able to fix my own stuff. My favourite past time
+          activities right now are: </p>
+        <ul class="text" style="padding-bottom: 1rem">
+          <li>Playing video games</li>
+          <li>Hanging out with friends</li>
+          <li>Reading books about philosophy(currently reading <a href="https://nl.wikipedia.org/wiki/Martin_Heidegger" style="color:#000333;">Heidegger</a>)</li>
+          <li>coding</li>
+        </ul>
+      </div>
+
+      <div class="columns sidebody">
+        <img src="/imgAndPdf/family.jpg" alt="afamilyphoto" class="img">
+        <img src="imgAndPdf/hz-logo.jpg" alt="hzlogo" class="img">
+      </div>
+
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="container-footer">
+        <div class="footer-center">
+          <h3>CONTACT</h3>
+          <div>
+            <span>
+              <i class="fa-solid fa-map-marker-alt"></i>
+            </span>
+            <p><span>Address:</span> Middelburg, Netherlands</p>
+          </div>
+          <div>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <p><span>Call:</span> +31 6 12345678</p>
+          </div>
+  </footer>
 
 </body>
 

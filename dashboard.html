@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Who am I</title>
+  <meta name="description" content="The dashboard of my study at a certain moment including things like my exams">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Matthias de Ruijter">
+  <link rel="icon" href="imgAndPdf/hz-logo.jpg">
+  <title>Dashboard</title>
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
   <link rel="stylesheet" href="css/body.css">
@@ -26,10 +30,10 @@
           <div id="navlinks">
             <a href="index.html">Homepage</a>
             <a href="profile.html">My Profile</a>
-            <a href="dashboard.html" class="active" >Dashboard</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
             <a href="faq.html">Frequent asked Question(faq)</a>
             <a href="blog.html">Blog</a>
-            <a onclick="opendropdownbtn()" class="dropdown-btn">Dropdown</a>
+            <a onclick="opendropdownbtn()" class="dropdown-btn">Aside Menu</a>
             <div class="dropdown-container dropdownbtn" id="dropdownbtn" style="display: none; transition: 0.2s;">
               <a target="_blank" rel="noopener noreferrer"
                 href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">-
@@ -76,7 +80,6 @@
           </div>
         </div>
         <table id="tdata">
-          <!-- add parameters-->
           <tr class="quartile0">
             <th style="text-align: center;">Quartile</th>
             <th>Course</th>
@@ -95,21 +98,18 @@
             <td class="grades" id="grade1">5.4</td>
           </tr>
           <tr>
-            <!--Quarter 1-->
             <td>Computer Science Basics</td>
             <td class="ec">5.0</td>
             <td>Written Knowledge Check</td>
             <td class="grades" id="grade2">5.5</td>
           </tr>
           <tr>
-            <!--Quarter 1-->
             <td rowspan="2">Programming Basics</td>
             <td rowspan="2" class="ec">5.0</td>
             <td>Case Study</td>
             <td class="grades" id="grade3.1">10</td>
           </tr>
           <tr>
-            <!--Quarter 1-->
             <td>Knowledge Test</td>
             <td class="grades" id="grade3.2">6</td>
           </tr>
@@ -118,10 +118,9 @@
             <td rowspan="2">Object-Orientated Programming</td>
             <td rowspan="2" class="ec">10</td>
             <td>Case Study</td>
-            <td class="grades" id="grade4.1">-</td>
+            <td class="grades" id="grade4.1">6</td>
           </tr>
           <tr>
-            <!--Quarter 2-->
             <td>presentation</td>
             <td class="grades" id="grade4.2">-</td>
           </tr>
@@ -133,19 +132,16 @@
             <td class="grades" id="grade5">-</td>
           </tr>
           <tr>
-            <!--Quarter 3-->
             <td rowspan="3">Framework Project 1</td>
             <td rowspan="3" class="ec">7.5</td>
             <td>Criterium Based Interview</td>
             <td class="grades" id="grade6.1">-</td>
           </tr>
           <tr>
-            <!--Quarter 3-->
             <td>Assignment</td>
             <td class="grades" id="grade6.2">-</td>
           </tr>
           <tr>
-            <!--Quarter 3-->
             <td>Case Study</td>
             <td class="grades" id="grade6.3">-</td>
           </tr>
@@ -157,46 +153,37 @@
             <td class="grades" id="grade7.1">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td>Report Of Acceptance Tests And Optional Assessments</td>
             <td class="grades" id="grade7.2">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td>IT Development Portfolio</td>
             <td class="grades" id="grade7.3">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td rowspan="2">Personal Professional Development: Exploration (PPD-E)(INT Class)</td>
             <td rowspan="2" class="ec">12.5</td>
             <td>English Test</td>
             <td class="grades" id="grade8.1">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td>Criterium Focused Interview</td>
             <td class="grades" id="grade8.2">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td rowspan="3">Personal Professional Development: Exploration (PPD-E)(NL Class)</td>
             <td rowspan="3" class="ec">12.5</td>
             <td>Test (Dutch)</td>
             <td class="grades" id="grade9.1">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td>Test (English)</td>
             <td class="grades" id="grade9.2">-</td>
           </tr>
           <tr>
-            <!--Quarter 4-->
             <td>Criterium Focused Interview</td>
             <td class="grades" id="grade9.3">-</td>
           </tr>
-
-        
         </table>
         <p>Studypoints</p>
         <div class="container" style="padding-bottom: 2rem;">
