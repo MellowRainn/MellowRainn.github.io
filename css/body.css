@@ -33,7 +33,7 @@ body {
 
 .img {
     width: 50%;
-    padding-right: 4rem;
+    padding-right: 200px;
 }
 
 .text {
@@ -51,6 +51,7 @@ body {
 
 .sidebody {
     background-color: #232323;
+    overflow: none;
 }
 
 .footer {
@@ -60,4 +61,33 @@ body {
     font-weight: 400;
     padding: 1rem;
     text-align: center;
+}
+
+.faq {
+    display: block;
+    font-size: 200%;
+}
+
+summary {
+    background-color: #333;
+    font-size: 100%;
+    border-radius: 40px;
+    margin-bottom: 0%;
+
+}
+
+details {
+    margin-top: 0%;
+    margin-bottom: 0px;
+    display: block;
+    background-color: #404040;
+    border: 4mm ridge rgba(23, 4, 66, 0.105);
+    position: relative;
+}
+
+.answer {
+    padding: 0%;
+    margin: 0%;
+    border-top: 2mm ridge rgba(23, 4, 66, 0.105);
+    font-size: 1.25rem;
 }

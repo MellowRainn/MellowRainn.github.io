@@ -1,83 +1,144 @@
 <!DOCTYPE html>
-<html style="background-color: dimgray;" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My profile</title>
-  <link href="styles.css" rel="stylesheet" />
-
+  <title>Who am I</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="stylesheet" href="css/body.css">
 </head>
 
-<body>
+<body class="body">
   <header>
-    <h1 class="title">My profile</h1>
-    <section style="font-family:arial ,helvetica, sans-serif;">
-      <div class="dropdown">
-        <button class="dropbtn">Aside menu</button>
-        <div class="dropdown-content">
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">- The HZ
-            HBO-ICT Course and Examination Regulations (CER)</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://learn.hz.nl/my/%22%3E">HZ learn</a>
-          <a target="blank" rel="noopener noreferrer"
-            href="https://teams.microsoft.com/?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid">Teams(browser)</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/HZ-HBO-ICT%22%3E">Github
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://hz.osiris-student.nl/#/voortgang/%22%3E">Study
-            progress</a>
-          <a target="_blank" rel="noopener norferrer" href="file:///C:/Users/mdrgn/Downloads/IR.pdf"> The Implementation
-            Regulations (IR)</a>
+    <div class="navbar">
+      <script src="js/navbar.js"></script>
+      <div class="container-nav nav-container-mask">
+        <div class="logo">
+          <span onclick="openNav()" class="navbaropener"><i style="color: #333;"
+              class="fa-solid fa-bars fa-3x"></i></span>
+          <span> <a href="index.html"><i class="fa-solid fa-browser fa-3x" style="color: #333;"></i></a></span>
+        </div>
+        <div id="mySidenav" class="sidenav" style="text-align: center;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div id="navlinks">
+            <a href="index.html">Homepage</a>
+            <a href="profile.html" class="active">My Profile</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="faq.html">Frequent asked Question(faq)</a>
+            <a href="blog.html">Blog</a>
+            <a onclick="opendropdownbtn()" class="dropdown-btn">Dropdown</a>
+            <div class="dropdown-container dropdownbtn" id="dropdownbtn" style="display: none; transition: 0.2s;">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">-
+                The HZ
+                HBO-ICT Course and Examination Regulations (CER)</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://learn.hz.nl/my/%22%3E">HZ
+                <a target="blank" rel="noopener noreferrer"
+                  href="https://teams.microsoft.com/?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid">Teams(browser)</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/HZ-HBO-ICT%22%3E">Github
+                </a>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://hz.osiris-student.nl/#/voortgang/%22%3E">Study
+                  progress</a>
+                <a target="_blank" rel="noopener norferrer" href="#"> The Implementation
+                  Regulations (IR)</a>
+            </div>
+          </div>
+          <div class="social">
+            <a href="discord.html" class="smallicons"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/" class="smallicons"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="github.com" class="smallicons"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="smallicons"><i class="fa-duotone fa-envelope"></i></a>
+            <a href="#" class="smallicons"><i class="fa-brands fa-stack-overflow"></i></a>
+          </div>
+
         </div>
       </div>
-      <ul target="_blank" rel="noopener noreferrer">
-        <!-- idk could do here target="_blank" rel="noopener noreferrer" but then my active element will also open a new page-->
-        <li><a href="index.html">Homepage</a></li>
-        <li class="active"><a href="profile.html">Profile</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="faq.html">FAQ(Frequent Asked Questions)</a></li>
-        <li><a href="dashboard.html">My own dashboard</a></li>
-      </ul>
-    </section>
+    </div>
   </header>
-
   <main>
-    <div>
-      <h2 class="introduction">Introduction of Matthias de Ruijter</h2>
-      <p class="intro2">In this intro we will talk briefly about who am I.</p>
-    </div>
-    <div>
-      <p class="text">
-        Hey I am Matthias de Ruijter I am a 18 year old boy who lives on a dairy farm.
-        I live around the area of Scharendijke on a farm. My family has 7 people in total including me. My parents have
-        very diverse jobs, my dad is a farmer while my mom is a doctor. As you can imagine this gives me access to a
-        variety of different skillset from childhood on. My oldest brother is currently studying at the TU delft, he
-        studies areodynamics and has completed his work in the dream team where he improved a exoskelet with a team for
-        people who cant walk. My second older brother studied at Dronthe and plans to become a commando in the army
-        after he had completed his study after that he also plans to take over the dairy farm. My older sister is
-        currently studying a variety of topics at the Roosevelt acedamy in Middelburg aswel. And lastly my little sister
-        is taking a break from school to do some charity work in another country.</p>
-      <p class="me">But thats enough about my family Lets talk about me. Im 18 now but since the day I got my hands on a
-        computer ive loved gaming in all sort of regards I started with original games like Rollercoaster Tycoon and
-        Quack attack. Since then ive played a variety of titels. When I played Minecraft a friend introduced me to
-        modded minecraft and I was immediatly hooked it just made the game feel fresh and new. Since then i have been
-        interested in coding and the principles behind it I have even coded a couple of my own mods and made my own
-        texture packs.This coding process would ofcourse be boring without any music and as time grew so did my music
-        taste.
-      <ol>
-        <p>
-          Right now my five favourite artist are:
-        </p>
-        <li>The Neighbourhood</li>
-        <li>Artic Monkeys</li>
-        <li>Kanye West</li>
-        <li>Imagine Dragons</li>
-        <li>Avicii</li>
-      </ol>
-      </p>
-    </div>
+    <div class="grid-container">
+      <div class="columns sidebody">
+        <img src="/img/family.jpg" alt="afamilyphoto" class="img">
+      </div>
+      <div class="columns mainbody">
+        <div>
+          <h1 class="title">Introduction of Matthias de Ruijter</h1>
+          <h2 class="subtitle">In this intro we will talk briefly about who am I.</h2>
+        </div>
+        <div>
+          <h2>My family</h2>
+          <p class="text" style="padding-bottom:20%;">
+            Hey I am Matthias de Ruijter I am a 18 year old boy who lives on a dairy farm.
+            I live around the area of Scharendijke on a farm. My family has 7 people in total including me. My parents
+            have
+            very diverse jobs, my dad is a farmer while my mom is a doctor. As you can imagine this gives me access to a
+            variety of different skillset from childhood on. My oldest brother is currently studying at the TU delft, he
+            studies areodynamics and has completed his work in the dream team where he improved a exoskelet with a team
+            for
+            people who cant walk. My second older brother studied at Dronthe and plans to become a commando in the army
+            after he had completed his study after that he also plans to take over the dairy farm. My older sister is
+            currently studying a variety of topics at the Roosevelt acedamy in Middelburg aswel. And lastly my little
+            sister
+            is taking a break from school to do some charity work in another country.</p>
+            <h2 style="padding-top: 10%;">Me.</h2>
+          <p class="text">But thats enough about my family Lets talk about me. Im 18 now but since the day I got my
+            hands
+            on a
+            computer ive loved gaming in all sort of regards I started with original games like Rollercoaster Tycoon and
+            Quack attack. Since then ive played a variety of titels. When I played Minecraft a friend introduced me to
+            modded minecraft and I was immediatly hooked it just made the game feel fresh and new. Since then i have
+            been
+            interested in coding and the principles behind it I have even coded a couple of my own mods and made my own
+            texture packs.This coding process would ofcourse be boring without any music and as time grew so did my
+            music
+            taste.
+        </div>
+      </div>
+      <div class="columns sidebody">
+        <h1 class="title">My Hobbies</h1>
+        <ul style="padding-bottom: 20%">
+          <li>Playing video games</li>
+          <li>Hanging out with friends</li>
+          <li>Reading books about philosophy</li>
+          <li>coding</li>
+        </ul>
+        <h1 class="title">My favorite games</h1>
+        <ul style="padding-bottom: 20%">
+          <li>Minecraft</li>
+          <li>modded minecraft</li>
+          <li>genshing impact</li>
+        </ul>
+        <h1 class="title">My favorite songs</h1>
+        <ul>
+          <li>Power by Kanye West</li>
+          <li>City lights by Avicii</li>
+          <li>Are we still friends? by Tyler the creator</li>
+          <li>lost by Frank ocean</li>
+          <li>No grey by The neighbourhood</li>
+      </div>
   </main>
+  <footer>
+    <div class="footer">
+      <div class="container-footer">
+        <div class="footer-center">
+          <h3>CONTACT</h3>
+          <div>
+            <span>
+              <i class="fa-solid fa-map-marker-alt"></i>
+            </span>
+            <p><span>Address:</span> Middelburg, Netherlands</p>
+          </div>
+          <div>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <p><span>Call:</span> +31 6 12345678</p>
+          </div>
+  </footer>
 
 </body>
 
