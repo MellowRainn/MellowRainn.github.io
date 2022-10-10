@@ -91,3 +91,106 @@ details {
     border-top: 2mm ridge rgba(23, 4, 66, 0.105);
     font-size: 1.25rem;
 }
+
+.grades {
+    background-color: #FF0000;
+    text-align: center;
+}
+
+#tdata {
+    height: auto;
+    width: 100%;
+    border: 4mm ridge rgba(65, 4, 207, 0.105);
+}
+
+
+
+.quartile0 {
+    background-color: rgb(22, 0, 185);
+}
+
+.grades {
+    background-color: #FF0000;
+    text-align: center;
+}
+
+.grades.green {
+    background-color: #33FF3C;
+}
+
+
+.ec {
+    text-align: center;
+}
+
+td {
+    border: 1px solid #111;
+    padding: 0%;
+    margin: 0%;
+}
+
+.quartile {
+    text-align: center;
+}
+
+.head {
+    position: fixed;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+
+.container {
+    width: 100%;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+.grades.grey {
+    background-color: #333
+}
+
+.active {
+    border-bottom: 10px solid #333;
+}
+
+.blogbox {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #232323;
+    position: absolute;
+    height: relative;
+    overflow: auto;
+}
+
+.articleblog a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.articleblog a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.articleblog a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.footer {
+        height: 100%;
+        display: block;
+    }

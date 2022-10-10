@@ -1,201 +1,231 @@
 <!DOCTYPE html>
-<html style="background-color: dimgray;" lang="en">
-<main>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My own dashboard</title>
-    
-    <link href="styles.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Who am I</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="stylesheet" href="css/body.css">
+</head>
 
-  <body>
-    <header>
-      <h1 class="title">Dashboard</h1>
-      <div class="dropdown">
-        <button class="dropbtn">Aside menu</button>
-        <div class="dropdown-content">
-          <a target="_blank" rel="noopener noreferrer"
-            href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">- The HZ
-            HBO-ICT Course and Examination Regulations (CER)</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://learn.hz.nl/my/%22%3E">HZ learn</a>
-          <a target="blank" rel="noopener noreferrer"
-            href="https://teams.microsoft.com/?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid">Teams(browser)</a>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/HZ-HBO-ICT%22%3E">Github
-          </a>
-          <a target="_blank" rel="noopener noreferrer" href="https://hz.osiris-student.nl/#/voortgang/%22%3E">Study
-            progress</a>
-          <a target="_blank" rel="noopener norferrer" href="file:///C:/Users/mdrgn/Downloads/IR.pdf"> The Implementation
-            Regulations (IR)</a>
+<body class="body">
+  <header>
+    <div class="navbar">
+      <script src="js/navbar.js"></script>
+      <div class="container-nav nav-container-mask">
+        <div class="logo">
+          <span onclick="openNav()" class="navbaropener"><i style="color: #333;"
+              class="fa-solid fa-bars fa-3x"></i></span>
+          <span> <a href="index.html"><i class="fa-solid fa-browser fa-3x" style="color: #333;"></i></a></span>
+        </div>
+        <div id="mySidenav" class="sidenav" style="text-align: center;">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div id="navlinks">
+            <a href="index.html">Homepage</a>
+            <a href="profile.html">My Profile</a>
+            <a href="dashboard.html" class="active" >Dashboard</a>
+            <a href="faq.html">Frequent asked Question(faq)</a>
+            <a href="blog.html">Blog</a>
+            <a onclick="opendropdownbtn()" class="dropdown-btn">Dropdown</a>
+            <div class="dropdown-container dropdownbtn" id="dropdownbtn" style="display: none; transition: 0.2s;">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen%22%3E>Link 1">-
+                The HZ
+                HBO-ICT Course and Examination Regulations (CER)</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://learn.hz.nl/my/%22%3E">HZ
+                <a target="blank" rel="noopener noreferrer"
+                  href="https://teams.microsoft.com/?culture=nl-nl&country=NL&lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/teams-grid/General?ctx=teamsGrid">Teams(browser)</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/HZ-HBO-ICT%22%3E">Github
+                </a>
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://hz.osiris-student.nl/#/voortgang/%22%3E">Study
+                  progress</a>
+                <a target="_blank" rel="noopener norferrer" href="imgAndPdf/IR-.pdf"> The Implementation
+                  Regulations (IR)</a>
+            </div>
+          </div>
+          <div class="social">
+            <a href="discord.html" class="smallicons"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/" class="smallicons"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="github.com" class="smallicons"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="smallicons"><i class="fa-duotone fa-envelope"></i></a>
+            <a href="#" class="smallicons"><i class="fa-brands fa-stack-overflow"></i></a>
+          </div>
+
         </div>
       </div>
-      <section style="font-family:arial ,helvetica, sans-serif;">
-        <ul target="_blank" rel="noopener noreferrer" class="headd">
-          <li><a href="index.html">Homepage</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html">FAQ(Frequent Asked Questions)</a></li>
-          <li class="active"><a href="dashboard.html">My own dashboard</a></li>
-        </ul>
-      </section>
-    </header>
-    <main>
-      <table id="tdata">
-        <!-- add parameters-->
-        <tr class="quartile0">
-          <th style="text-align: center;">Quartile</th>
-          <th>Course</th>
-          <th style="text-align: center;">EC</th>
-          <th>Exam</th>
-          <th style="text-align: center;">Grade</th>
-        </tr>
-        <tr>
-          <th colspan="5" style="text-align: center;" class="quartile0">Year 1</th>
-        </tr>
-        <tr class="quartile1">
-          <td class="quartile" rowspan="4">1.</td>
-          <td>Program & Career Orientation</td>
-          <td class="ec">2.5</td>
-          <td>Assessment Website</td>
-          <td class="grades">5.4</td>
-        </tr>
-        <tr>
-          <!--Quarter 1-->
-          <td>Computer Science Basics</td>
-          <td class="ec">5.0</td>
-          <td>Written Knowledge Check</td>
-          <td class="grades">5.5</td>
-        </tr>
-        <tr>
-          <!--Quarter 1-->
-          <td rowspan="2">Programming Basics</td>
-          <td rowspan="2" class="ec">5.0</td>
-          <td>Case Study</td>
-          <td class="grades">10</td>
-        </tr>
-        <tr>
-          <!--Quarter 1-->
-          <td>Knowledge Test</td>
-          <td class="grades">6</td>
-        </tr>
-        <tr class="quartile2">
-          <td class="quartile" rowspan="2">2.</td>
-          <td rowspan="2">Object-Orientated Programming</td>
-          <td rowspan="2" class="ec">10</td>
-          <td>Case Study</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 2-->
-          <td>presentation</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <td rowspan="4" class="quartile">3</td>
-          <td>Framework Development</td>
-          <td class="ec">5.0</td>
-          <td>Case study</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 3-->
-          <td rowspan="3">Framework Project 1</td>
-          <td rowspan="3" class="ec">7.5</td>
-          <td>Criterium Based Interview</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 3-->
-          <td>Assignment</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 3-->
-          <td>Case Study</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <td rowspan="8" class="quartile">4</td>
-          <td rowspan="3">Framework Project 2</td>
-          <td rowspan="3" class="ec">10</td>
-          <td>Final Delivery</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td>Report Of Acceptance Tests And Optional Assessments</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td>IT Development Portfolio</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td rowspan="2">Personal Professional Development: Exploration (PPD-E)(INT Class)</td>
-          <td rowspan="2" class="ec">12.5</td>
-          <td>English Test</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td>Criterium Focused Interview</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td rowspan="3">Personal Professional Development: Exploration (PPD-E)(NL Class)</td>
-          <td rowspan="3" class="ec">12.5</td>
-          <td>Test (Dutch)</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td>Test (English)</td>
-          <td class="grades">-</td>
-        </tr>
-        <tr>
-          <!--Quarter 4-->
-          <td>Criterium Focused Interview</td>
-          <td class="grades">-</td>
-        </tr>
-
-        <script>
-          let els = document.getElementsByClassName("grades")
-          for (let i = 0; i < els.length; i++) {
-            let cell = els[i];
-            if (cell.textContent < 5.5) {
-              cell.classList.remove('green')
-            } else {
-              cell.classList.add('green');
-            }
-          }
-        </script>
-      </table>
-
-
-      <p>Studypoints</p>
-      <div class="container">
-        <div class="skills points">0</div>
+    </div>
+  </header>
+  <main>
+    <div class="grid-container">
+      <div class="columns sidebody">
       </div>
+      <div class="columns mainbody">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h1 class="card-title">Dashboard</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table id="tdata">
+          <!-- add parameters-->
+          <tr class="quartile0">
+            <th style="text-align: center;">Quartile</th>
+            <th>Course</th>
+            <th style="text-align: center;">EC</th>
+            <th>Exam</th>
+            <th style="text-align: center;">Grade</th>
+          </tr>
+          <tr>
+            <th colspan="5" style="text-align: center;" class="quartile0">Year 1</th>
+          </tr>
+          <tr class="quartile1">
+            <td class="quartile" rowspan="4">1.</td>
+            <td>Program & Career Orientation</td>
+            <td class="ec" id="ec1">2.5</td>
+            <td>Assessment Website</td>
+            <td class="grades" id="grade1">5.4</td>
+          </tr>
+          <tr>
+            <!--Quarter 1-->
+            <td>Computer Science Basics</td>
+            <td class="ec">5.0</td>
+            <td>Written Knowledge Check</td>
+            <td class="grades" id="grade2">5.5</td>
+          </tr>
+          <tr>
+            <!--Quarter 1-->
+            <td rowspan="2">Programming Basics</td>
+            <td rowspan="2" class="ec">5.0</td>
+            <td>Case Study</td>
+            <td class="grades" id="grade3.1">10</td>
+          </tr>
+          <tr>
+            <!--Quarter 1-->
+            <td>Knowledge Test</td>
+            <td class="grades" id="grade3.2">6</td>
+          </tr>
+          <tr class="quartile2">
+            <td class="quartile" rowspan="2">2.</td>
+            <td rowspan="2">Object-Orientated Programming</td>
+            <td rowspan="2" class="ec">10</td>
+            <td>Case Study</td>
+            <td class="grades" id="grade4.1">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 2-->
+            <td>presentation</td>
+            <td class="grades" id="grade4.2">-</td>
+          </tr>
+          <tr>
+            <td rowspan="4" class="quartile">3</td>
+            <td>Framework Development</td>
+            <td class="ec">5.0</td>
+            <td>Case study</td>
+            <td class="grades" id="grade5">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 3-->
+            <td rowspan="3">Framework Project 1</td>
+            <td rowspan="3" class="ec">7.5</td>
+            <td>Criterium Based Interview</td>
+            <td class="grades" id="grade6.1">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 3-->
+            <td>Assignment</td>
+            <td class="grades" id="grade6.2">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 3-->
+            <td>Case Study</td>
+            <td class="grades" id="grade6.3">-</td>
+          </tr>
+          <tr>
+            <td rowspan="8" class="quartile">4</td>
+            <td rowspan="3">Framework Project 2</td>
+            <td rowspan="3" class="ec">10</td>
+            <td>Final Delivery</td>
+            <td class="grades" id="grade7.1">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td>Report Of Acceptance Tests And Optional Assessments</td>
+            <td class="grades" id="grade7.2">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td>IT Development Portfolio</td>
+            <td class="grades" id="grade7.3">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td rowspan="2">Personal Professional Development: Exploration (PPD-E)(INT Class)</td>
+            <td rowspan="2" class="ec">12.5</td>
+            <td>English Test</td>
+            <td class="grades" id="grade8.1">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td>Criterium Focused Interview</td>
+            <td class="grades" id="grade8.2">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td rowspan="3">Personal Professional Development: Exploration (PPD-E)(NL Class)</td>
+            <td rowspan="3" class="ec">12.5</td>
+            <td>Test (Dutch)</td>
+            <td class="grades" id="grade9.1">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td>Test (English)</td>
+            <td class="grades" id="grade9.2">-</td>
+          </tr>
+          <tr>
+            <!--Quarter 4-->
+            <td>Criterium Focused Interview</td>
+            <td class="grades" id="grade9.3">-</td>
+          </tr>
 
-      <p>NBSA</p>
-      <div class="container">
-        <div class="skills nbsa">45</div>
+        
+        </table>
+        <p>Studypoints</p>
+        <div class="container" style="padding-bottom: 2rem;">
+          <div class="skills points" id="ecs" style="width: 0%; background-color: red;">0</div>
+        </div>
       </div>
-
-      <p>School weeks left</p>
-      <div class="container">
-        <div class="skills weeks">41</div>
+      <script src="js/dashboard.js"></script>
+      <div class="columns sidebody">
       </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="container-footer">
+        <div class="footer-center">
+          <h3>CONTACT</h3>
+          <div>
+            <span>
+              <i class="fa-solid fa-map-marker-alt"></i>
+            </span>
+            <p><span>Address:</span> Middelburg, Netherlands</p>
+          </div>
+          <div>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <p><span>Call:</span> +31 6 12345678</p>
+          </div>
+  </footer>
 
-
-    </main>
-
-  </body>
-</main>
+</body>
 
 </html>
